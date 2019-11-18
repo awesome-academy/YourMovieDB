@@ -3,7 +3,10 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - Differentiator (3.1.0)
   - netfox (1.13.0)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
   - ObjectMapper (3.4.1)
   - Reusable (4.0.4):
     - Reusable/Storyboard (= 4.0.4)
@@ -12,6 +15,10 @@ PODS:
   - Reusable/View (4.0.4)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
@@ -23,9 +30,11 @@ DEPENDENCIES:
   - Alamofire (~> 4.7.2)
   - AlamofireObjectMapper (~> 5.2)
   - netfox
+  - "NSObject+Rx"
   - ObjectMapper (~> 3.4)
   - Reusable
   - RxCocoa
+  - RxDataSources
   - RxSwift
   - SVProgressHUD
   - SwiftLint
@@ -35,11 +44,14 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireObjectMapper
+    - Differentiator
     - netfox
+    - "NSObject+Rx"
     - ObjectMapper
     - Reusable
     - RxAtomic
     - RxCocoa
+    - RxDataSources
     - RxSwift
     - SVProgressHUD
     - SwiftLint
@@ -48,16 +60,19 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   netfox: 44e626a4fe8bd1cde774346b03edb84a593077de
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   Reusable: 7fc772097df3e5fc86f59d8a7af9708e49b5ff55
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: d4e7443d93e2bbe868dc302e6c7ac30b469d6a14
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: a351f410af0ae19ff8af629110972e93ed401fbf
+PODFILE CHECKSUM: a601ea56770c1b2911b4634a3b19402aa4de46e7
 
 COCOAPODS: 1.5.3

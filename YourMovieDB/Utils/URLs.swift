@@ -21,4 +21,3 @@ enum Urls {
     static let backdropUrl = "https://image.tmdb.org/t/p/w500"
     static let profileUrl = "https://image.tmdb.org/t/p/w154"
 }
-

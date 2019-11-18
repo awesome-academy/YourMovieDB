@@ -17,8 +17,9 @@ struct AppNavigator: AppNavigatorType {
 
     func toMain() {
         let homeVc = HomeViewController()
-        let navigation = UINavigationController(rootViewController: homeVc)
-        window.rootViewController = navigation
+        let viewModel = HomeViewModel(navigator: HomeNavigator(), useCase: HomeUseCase())
+        homeVc.bindViewModel(to: viewModel)
+        window.rootViewController = homeVc
         window.makeKeyAndVisible()
     }
 }

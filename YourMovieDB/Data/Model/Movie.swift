@@ -24,11 +24,13 @@ struct Movie: BaseModel {
     var voteAverage = 0.0
     var overView = ""
     var releaseDate: Date?
-    
+
+    init() { }
+
     init?(map: Map) {
         mapping(map: map)
     }
-    
+
     mutating func mapping(map: Map) {
         popularity <- map["popularity"]
         voteCount <- map["vote_count"]

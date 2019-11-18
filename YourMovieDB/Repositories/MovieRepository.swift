@@ -16,17 +16,13 @@ protocol MovieRepositoryType {
     func getupComingMovie(input: HomeRequest) -> Observable<[Movie]>
     func getNowPlayingMovie(input: HomeRequest) -> Observable<[Movie]>
     func getDetail(input: MovieRequest) -> Observable<MovieDetail>
-    func getMovie(input: SearchRequest) -> Observable<[Movie]>
+    func searchMovie(input: SearchRequest) -> Observable<[Movie]>
     func getGenres(input: GenresRequest) -> Observable<[Genre]>
 
 }
 
 final class MovieRepository: MovieRepositoryType {
-    private var apiService: APIService
-
-    required init(api: APIService) {
-        self.apiService = api
-    }
+    private let apiService = APIService.shared
 
     func getPopularMovie(input: HomeRequest) -> Observable<[Movie]> {
         return apiService.request(input: input)
@@ -73,11 +69,10 @@ final class MovieRepository: MovieRepositoryType {
         }
     }
 
-    func getMovie(input: SearchRequest) -> Observable<[Movie]> {
+    func searchMovie(input: SearchRequest) -> Observable<[Movie]> {
         return apiService.request(input: input)
             .map { (response: SearchResponse) -> [Movie] in
                 return response.movies
         }
     }
 }
-

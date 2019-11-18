@@ -64,12 +64,12 @@
                                 <constraint firstItem="PPC-Qo-99C" firstAttribute="centerY" secondItem="jLZ-oh-GgI" secondAttribute="centerY" id="yhj-6B-x2a"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-sa-ULe">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-sa-ULe">
                             <rect key="frame" x="0.0" y="50" width="375" height="597"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Y8m-sa-ULe" secondAttribute="bottom" id="4qZ-9Q-Vap"/>
                         <constraint firstItem="Y8m-sa-ULe" firstAttribute="top" secondItem="jLZ-oh-GgI" secondAttribute="bottom" id="IFK-Ym-QHi"/>

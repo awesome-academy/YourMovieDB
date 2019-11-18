@@ -35,4 +35,8 @@ final class MovieTableViewCell: UITableViewCell, NibReusable {
             $0.shadowOpacity = 0.7
         }
     }
+    
+    func bindData(data: Movie) {
+        titleLabel.text = data.title
+    }
 }

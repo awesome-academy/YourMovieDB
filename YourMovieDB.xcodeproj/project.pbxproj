@@ -44,6 +44,11 @@
 		DBB8AC6223795FE000BD01A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8AC5B23795FE000BD01A6 /* HomeViewController.swift */; };
 		DBB8AC6323795FE000BD01A6 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8AC5D23795FE000BD01A6 /* AppNavigator.swift */; };
 		DBB8AC6423795FE000BD01A6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8AC5E23795FE000BD01A6 /* AppViewModel.swift */; };
+		DBBBD167237A3E6E001B0733 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBD166237A3E6E001B0733 /* HomeViewModel.swift */; };
+		DBBBD16A237A4245001B0733 /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBD169237A4245001B0733 /* HomeNavigator.swift */; };
+		DBCC8A7F237E3D400007B762 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8A7E237E3D400007B762 /* HomeUseCase.swift */; };
+		DBCC8A81237E53910007B762 /* HomeDataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8A80237E53910007B762 /* HomeDataSection.swift */; };
+		DBCC8A83237E9B5D0007B762 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8A82237E9B5D0007B762 /* BindableType.swift */; };
 		DBF78ABE23729F1500BCC49D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF78ABD23729F1500BCC49D /* Movie.swift */; };
 		DBF78AC023729F1E00BCC49D /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF78ABF23729F1E00BCC49D /* Genre.swift */; };
 		DBF78AC62372B02B00BCC49D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF78AC52372B02B00BCC49D /* Keys.swift */; };
@@ -92,6 +97,11 @@
 		DBB8AC5B23795FE000BD01A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DBB8AC5D23795FE000BD01A6 /* AppNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		DBB8AC5E23795FE000BD01A6 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		DBBBD166237A3E6E001B0733 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DBBBD169237A4245001B0733 /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		DBCC8A7E237E3D400007B762 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		DBCC8A80237E53910007B762 /* HomeDataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSection.swift; sourceTree = "<group>"; };
+		DBCC8A82237E9B5D0007B762 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		DBF78ABD23729F1500BCC49D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		DBF78ABF23729F1E00BCC49D /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		DBF78AC52372B02B00BCC49D /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
@@ -220,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				DB9FF69B2371325000BF277C /* ViewModelType.swift */,
+				DBCC8A82237E9B5D0007B762 /* BindableType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -335,6 +346,8 @@
 		DBB8AC5523795FE000BD01A6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DBBBD168237A4234001B0733 /* Navigator */,
+				DBBBD165237A3E61001B0733 /* ViewModel */,
 				DBB8AC5623795FE000BD01A6 /* Cell */,
 				DBB8AC5923795FE000BD01A6 /* View */,
 			);
@@ -366,6 +379,24 @@
 				DBB8AC5E23795FE000BD01A6 /* AppViewModel.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DBBBD165237A3E61001B0733 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8A7E237E3D400007B762 /* HomeUseCase.swift */,
+				DBBBD166237A3E6E001B0733 /* HomeViewModel.swift */,
+				DBCC8A80237E53910007B762 /* HomeDataSection.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBBBD168237A4234001B0733 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				DBBBD169237A4245001B0733 /* HomeNavigator.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 		DBF78AB423728D7800BCC49D /* Repositories */ = {
@@ -490,10 +521,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YourMovieDB/Pods-YourMovieDB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
@@ -505,10 +539,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
@@ -556,12 +593,16 @@
 				DB2DCB352373BCF400077868 /* GenreResponse.swift in Sources */,
 				DB2DCB3D2373CB2100077868 /* MovieDetailResponse.swift in Sources */,
 				DBF78AC62372B02B00BCC49D /* Keys.swift in Sources */,
+				DBBBD16A237A4245001B0733 /* HomeNavigator.swift in Sources */,
+				DBCC8A7F237E3D400007B762 /* HomeUseCase.swift in Sources */,
 				DBB8AC6323795FE000BD01A6 /* AppNavigator.swift in Sources */,
+				DBCC8A81237E53910007B762 /* HomeDataSection.swift in Sources */,
 				DB9FF6A02371328F00BF277C /* BaseModel.swift in Sources */,
 				DBF78AC023729F1E00BCC49D /* Genre.swift in Sources */,
 				DB9FF69C2371325000BF277C /* ViewModelType.swift in Sources */,
 				DB9FF6B8237150EE00BF277C /* UIViewControllerExtension.swift in Sources */,
 				DB9FF6C02371522300BF277C /* URLs.swift in Sources */,
+				DBBBD167237A3E6E001B0733 /* HomeViewModel.swift in Sources */,
 				DB9D6F6F237507FE00AA955E /* SearchRequest.swift in Sources */,
 				DB9FF6AE2371350500BF277C /* ErrorResponse.swift in Sources */,
 				DB9FF6BE237151F400BF277C /* Constants.swift in Sources */,
@@ -573,6 +614,7 @@
 				DB1FF81F2372B9F3000DBB3E /* HomeRequest.swift in Sources */,
 				DB9D6F822375513000AA955E /* GenresRequest.swift in Sources */,
 				DB9D6F7E23754A7100AA955E /* SearchResponse.swift in Sources */,
+				DBCC8A83237E9B5D0007B762 /* BindableType.swift in Sources */,
 				DBB8AC6423795FE000BD01A6 /* AppViewModel.swift in Sources */,
 				DBB8AC6223795FE000BD01A6 /* HomeViewController.swift in Sources */,
 				DBF78ABE23729F1500BCC49D /* Movie.swift in Sources */,

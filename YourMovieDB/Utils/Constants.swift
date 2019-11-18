@@ -10,4 +10,9 @@ import Foundation
 
 struct Constants {
     static let appName = "Your Movie Db"
+    static let upComingSection = "Up Coming"
+    static let nowPlayingSection = "Now Playing"
+    static let topRateSection = "TopRate"
+    static let popularSection = "Popular"
+    static let defaultPage = 1
 }
